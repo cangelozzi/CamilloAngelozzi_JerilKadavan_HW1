@@ -1,0 +1,10 @@
+//! sass --watch sass:css --style compressed
+
+@import '_vars';
+body {
+  background-color: $logo_pink;
+}
+
+h1 {
+  color: $logo_orange;
+}
