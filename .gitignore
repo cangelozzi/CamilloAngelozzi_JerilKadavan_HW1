@@ -1,9 +1,8 @@
 .DS_Store
+.vscode
+node_modules
+
+.sass-cache
+assets
 .psd
 .ai
-.sass-cache
-
-node_modules
-Artwork
-Documents
-assets

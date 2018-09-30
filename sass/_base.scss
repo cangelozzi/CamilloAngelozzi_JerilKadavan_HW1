@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+  /* 62.5% of 16px is 10px which is 1rem */
+  min-height: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: -moz-linear-gradient(top, $grad_1 0%, $grad_2 60%, $grad_3 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, $grad_1),
+    color-stop(60%, $grad_2),
+    color-stop(100%, $grad_3)
+  );
+  background: -ms-linear-gradient(top, $grad_1 0%, $grad_2 60%, $grad_3 100%);
+  background: linear-gradient(to bottom, $grad_1 0%, $grad_2 60%, $grad_3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b721ff', endColorstr='#21d4fd',GradientType=0 ); /* IE6-9 */
+}
+
+#myContainer {
+  background-color: $base_bg;
+  width: 89%;
+  margin: 0 auto;
+  border-radius: 6px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  border: 1px solid white;
+}
+

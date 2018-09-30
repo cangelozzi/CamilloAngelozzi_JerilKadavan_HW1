@@ -1,10 +1,21 @@
 //! sass --watch sass:css --style compressed
 
+// import variables
 @import '_vars';
-body {
-  background-color: $logo_pink;
-}
 
-h1 {
-  color: $logo_orange;
-}
+// import utilities rules
+@import '_utilities';
+
+// import page fundamentals rules
+@import '_base';
+
+// import media queries rules
+@import '_mediaQueries';
+
+// import modules components
+@import 'modules/_header';
+@import 'modules/_hero';
+@import 'modules/_skills';
+@import 'modules/_explore';
+@import 'modules/_team';
+@import 'modules/_footer';
