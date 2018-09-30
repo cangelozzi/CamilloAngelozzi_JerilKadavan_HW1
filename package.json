@@ -4,12 +4,13 @@
   "description": "HW1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass --output-style compressed sass/main.scss css/main.css -w"
   },
   "author": "Camillo Angelozzi and Jeril Kadavan",
   "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.9.3"
   }
 }

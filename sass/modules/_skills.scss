@@ -1,0 +1,63 @@
+#skills {
+
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); // Rows will be implicit, no need to specify. Auto-fit to make it responsive.
+  grid-gap: 6rem;
+  align-items: start;
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.skill {
+
+  display: grid;
+  grid-template-columns: /*icon width*/min-content /*heading width*/1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
+
+  p {
+    font-size: 1.2rem;
+    color: $dark_text_color;
+    margin-right: 4rem;
+    text-align: center;
+  }
+
+  &__icon {
+    fill: $color_black;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+    margin-left: 1rem;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+
+  &:last-child {
+  margin-bottom: 10rem;
+}
+
+}
+
+// icons
+
+.fa-chart-pie .fa-w-18 {
+  width: 2rem;
+}
+
+.svg-inline--fa.fa-w-10 {
+  width: 2rem;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 2rem;
+}
+
+.svg-inline--fa.fa-w-18 {
+  width: 2rem;
+}

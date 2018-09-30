@@ -1,0 +1,58 @@
+#hero {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($base_bg, 0.6),
+      rgba($base_bg, 0.9)
+    ),
+    url(../../images/homepage_bg_mobile.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 6px;
+  height: 50rem;
+
+  h3 {
+    font-size: 2.7rem;
+  }
+
+  &__logo {
+    width: 46%;
+    display: block;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    border-bottom: 2px solid $color_black;
+
+    span {
+      margin-right: 0.6rem;
+    }
+    span:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__intro {
+    color: $dark_text_color;
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+      margin-top: 2rem;
+    }
+  }
+}

@@ -6,13 +6,276 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CJ Studio</title>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+    crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-  <h1>Test</h1>
+  <h1 class="hidden">CJ Studio</h1>
+
+  <!-- HEADER -->
+  <header id="mainHeader">
+    <h2 class="hidden">Hamburger Navigation</h2>
+    <!-- FLOATING NAVIGATION TOGGLE BUTTON -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <h2 class="hidden">Page Navigation</h2>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#hero" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+          <li class="navigation__item"><a href="#explore" class="navigation__link">Explore</a></li>
+          <li class="navigation__item"><a href="#team" class="navigation__link">Team</a></li>
+
+          <li>
+            <ul id="social">
+              <li><i class="fas fa-search" style="color: white;"></i></li>
+              <li><a href="http://www.youtube.com" target="_blank" id="yt"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="http://www.twitter.com" target="_blank" id="tw"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="http://www.instagram.com" target="_blank" id="pt"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="http://www.facebook.com" target="_blank" id="fb"><i class="fab fa-facebook-square"></i></a></li>
+          </ul>
+        </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="myContainer">
+    <h2 class="hidden">Website Main Content</h2>
+
+    <section id="hero">
+      <h3 class="hidden">Hero Intro, Tagline and Logo</h3>
+
+      <!-- Logo -->
+      <div id="hero__logo-box">
+        <img src="images/logo.svg" alt="CJ Logo" id="hero__logo">
+      </div>
+
+      <!-- Tagline -->
+      <div id="hero__text-box">
+        <h3 class="hero-tagline">
+          <span class="hero-tagline--sub">Create</span>
+          <span class="hero-tagline--sub">Wire</span>
+          <span class="hero-tagline--sub">Design</span>
+          <span class="hero-tagline--sub">Code</span>
+          </h3>
+      </div>
+
+      <!-- Intro Paragraph -->
+      <div id="hero__intro">
+        <p>We are a mobile app / web development agency with office in London, Ontario.</p>
+        <p>With Digital Design and Brand Strategy, we shape brands that matter in our culture.</p>
+      </div>
+
+    </section>
+
+    <!-- skills -->
+    <section id="skills">
+      <h2 class="hidden">Agency Skills</h2>
+
+      <div class="skill">
+        <i class="fas fa-pencil-alt skill__icon"></i>
+
+        <h3>Digital Services</h3>
+        <p class="skill__text">
+          Working from a strategic-creative platform, we create content and develop digital experiences with
+          elasticity; expanding and contorting to suit the shape and dimension of business goals and consumer
+          expectations.
+        </p>
+      </div>
+
+      <div class="skill">
+        <i class="fas fa-cog skill__icon"></i>
+
+        <h3>Web Development</h3>
+        <p class="skill__text">
+          The age of the emotionally, not just visually, compelling website is upon us. And we’re totally ready for it.
+          From bold and insightful information architecture to rich, appealing design.
+        </p>
+      </div>
+
+      <div class="skill">
+        <i class="fas fa-user skill__icon"></i>
+
+        <h3>Digital Marketing</h3>
+        <p class="skill__text">
+          Drive traffic, build engagement, score meaningful conversions and cultivate long-term relationships with
+          smart, cost-effevctive, integrated campaigns that focus on relevant targets.
+        </p>
+      </div>
+
+      <div class="skill">
+        <i class="fas fa-chart-pie skill__icon"></i>
+
+        <h3>Digital Strategy</h3>
+        <p class="skill__text">
+          It’s the truth and a real human point of view in helping brands and companies engage people by cutting
+          through what doesn’t matter and focusing on what does.
+        </p>
+      </div>
+
+      <div class="skill">
+        <i class="fas fa-desktop skill__icon"></i>
+
+        <h3>UX / UI Design</h3>
+        <p class="skill__text">
+          How do you make a complex process simple? How do you make the intangibles into a working prototype? Our
+          immersive, fluid process of envisioning and prototyping drives our ability to innovate and iterate quickly.
+        </p>
+      </div>
+
+      <div class="skill">
+        <i class="fas fa-mobile-alt skill__icon"></i>
+
+        <h3>Mobile Development</h3>
+        <p class="skill__text">
+          In today’s world, it’s critical to be wherever your consumers are. A custom mobile app or mobile responsive
+          website puts you in the palm of their
+          hands. Mobile web usage has tripled year-to-year for three years in a row. Tablets have redefined the way
+          users access and experience content.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- explore -->
+    <section id="explore">
+
+      <h2>Explore Our Works</h2>
+
+      <div id="gallery">
+        <div id="gallery_one">
+          <img src="images/jeril_img/jeril_lexus.png" alt="Gallery Image one">
+        </div>
+        <div id="gallery_two">
+          <img src="images/jeril_img/jeril_star.png" alt="Gallery Image two">
+        </div>
+        <div id="gallery_three">
+          <img src="images/jeril_img/jeril_vol.png" alt="Gallery Image three">
+        </div>
+        <div id="gallery_four">
+          <img src="images/jeril_img/jeril_mono.png" alt="Gallery Image four">
+        </div>
+        <div id="gallery_five">
+          <img src="images/jeril_img/jeril_hotel.png" alt="Gallery Image five">
+        </div>
+        <div id="gallery_six">
+          <img src="images/camillo_img/travelbysense.jpg" alt="Gallery Image six">
+        </div>
+        <div id="gallery_seven">
+          <img src="images/camillo_img/architecture.png" alt="Gallery Image seven">
+        </div>
+        <div id="gallery_eight">
+          <img src="images/camillo_img/next.png" alt="Gallery Image eight">
+        </div>
+        <div id="gallery_nine">
+          <img src="images/camillo_img/sub37.png" alt="Gallery Image nine">
+        </div>
+        <div id="gallery_ten">
+          <img src="images/camillo_img/teamCanada.png" alt="Gallery Image ten">
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- team -->
+    <section id="team">
+      <h2>Our Team</h2>
+
+      <div class="card-wrapper">
+
+        <div class="card">
+
+          <div class="card-image">
+            <img src="images/camillo_pic.jpg" alt="team profile one">
+          </div>
+
+          <ul class="social-icons">
+            <li>
+                <a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            <li>
+                <a href="https://github.com/cangelozzi">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+          </ul>
+
+          <div class="details">
+            <h3>Camillo Angelozzi
+              <br>
+              <span class="job-title">Web Developer</span>
+            </h3>
+          </div>
+        </div>
+      </div><!-- end team member one -->
+
+      <div class="card-wrapper">
+
+        <div class="card">
+
+          <div class="card-image">
+            <img src="images/jeril_pic.jpg" alt="team profile two">
+          </div>
+
+          <ul class="social-icons">
+            <li>
+                            <a href="https://www.linkedin.com/in/jeril-g-kadavan-ba350612a/" target="_blank">
+                              <i class="fab fa-linkedin-in"></i>
+                            </a>
+                          </li>
+            <li>
+                            <a href="https://github.com/jerilgkadavan">
+                              <i class="fab fa-github"></i>
+                            </a>
+                          </li>
+          </ul>
+
+          <div class="details">
+            <h3>Jeril Kadavan
+              <br>
+              <span class="job-title">Web Designer</span>
+            </h3>
+          </div>
+        </div>
+      </div><!-- end team member two -->
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        <h2 class="hidden">Website Footer</h2>
+
+        <div id="footer__logo">
+          <img src="images/logo.svg" alt="footer logo" id="footerLogo">
+        </div>
+
+        <div class="footer__navigation">
+          <ul class="footer__navigation-list">
+            <li class="footer__navigation-item"><a href="#home">contact</a></li>
+            <li class="footer__navigation-item"><a href="#home">copyright</a></li>
+            <li class="footer__navigation-item"><a href="#home">privacy</a></li>
+            <li class="footer__navigation-item"><a href="#home">terms</a></li>
+          </ul>
+        </div>
+
+      </footer>
+
+
+    </section>
+
+  </main>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
