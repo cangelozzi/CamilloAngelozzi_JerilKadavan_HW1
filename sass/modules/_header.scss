@@ -6,16 +6,21 @@
   }
   &__button {
     background-color: $color-white;
-    box-shadow: 1rem .4rem 3rem rgba(0, 0, 0, 0.4);
+    box-shadow: 1rem 0.4rem 3rem rgba(0, 0, 0, 0.4);
     border-radius: 80%;
     height: 4rem;
     width: 4rem;
     position: fixed;
-    top: .9rem;
+    top: 0.9rem;
     left: 2rem;
     z-index: 2000;
     text-align: center;
     cursor: pointer;
+
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
   }
   &__background {
     height: 6rem;
@@ -24,12 +29,14 @@
     position: fixed;
     top: 2.5rem;
     left: 2.5rem;
-    background-image: radial-gradient(
-      $grad_1,
-      $grad_3
-    );
+    background-image: radial-gradient($grad_1, $grad_3);
     z-index: 1100;
     display: none;
+
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      display: none !important;
+    }
   }
   &__nav {
     height: 100vh;
@@ -39,6 +46,14 @@
     right: 0;
     z-index: 1500;
     opacity: 0;
+
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.8);
+      height: 5vh;
+    }
+
   }
   &__list {
     position: absolute;
@@ -48,9 +63,26 @@
     list-style: none;
     text-align: center;
     width: 100%;
+    
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      top: 3rem;
+      text-align: left;
+      width: 91%;
+    }
+
+    // Tablet LANDSCAPE media queries
+    @media screen and (min-device-width: 700px) and (orientation: landscape) {
+      top: 2rem;
+    }
   }
   &__item {
     margin: 1rem;
+    // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      display: inline;
+      margin: -0.4rem;
+    }
   }
   &__link {
     &:link,
@@ -62,12 +94,25 @@
       text-decoration: none;
       text-transform: uppercase;
       padding: 1rem 2rem;
+
+      // tablet size media queries at 700px
+      @media screen and (min-width: 700px) {
+        font-size: 1.6rem;
+        margin-left: 3rem;
+        padding: 0;
+      }
     }
 
     &:hover,
     &:active {
       color: $grad_3;
       transform: scale(1.2);
+
+      // tablet size media queries at 700px
+      @media screen and (min-width: 700px) {
+        color: $grad_3;
+        transform: scale(1);
+      }
     }
   }
 
@@ -136,12 +181,35 @@
 
 #social {
   margin-top: 6rem;
+
+  // mobile LANDSCAPE media queries
+  @media screen and (min-device-width: 320px) and (orientation: landscape) {
+    margin-top: 2rem;
+  }
+
+  // tablet size media queries at 700px
+  @media screen and (min-width: 700px) {
+    position: absolute;
+    top: -64px;
+    right: 5px;
+  }
+
+  // Tablet LANDSCAPE media queries
+  @media screen and (min-device-width: 700px) and (orientation: landscape) {
+    top: -2rem;
+  }
 }
 
 #social li {
   display: inline;
   margin-right: 20px;
   font-size: 2.4rem;
+
+  // tablet size media queries at 700px
+  @media screen and (min-width: 700px) {
+    text-align: right;
+    font-size: 1.8rem;
+  }
 }
 
 #social li a {
