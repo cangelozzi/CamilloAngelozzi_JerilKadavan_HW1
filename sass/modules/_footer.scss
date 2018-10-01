@@ -25,10 +25,20 @@
     a {
       color: #000;
       text-decoration: none;
+
+      // desktop size media queries at 1200px
+      @media screen and (min-width: 1200px) {
+        font-size: 2rem;
+      }
     }
 
     &:not(:last-child) {
       margin-right: 1.5rem;
+
+            // desktop size media queries at 1200px
+      @media screen and (min-width: 1200px) {
+         margin-right: 3rem;
+      }
     }
   }
 }
