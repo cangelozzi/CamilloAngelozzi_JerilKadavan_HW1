@@ -49,7 +49,7 @@
 
   // desktop size media queries at 1200px
   @media screen and (min-width: 1200px) {
-    left: 25rem;
+    left: 50%;
   }
 
   .card-image {
@@ -122,12 +122,11 @@
     color: #000;
     text-transform: uppercase;
     margin-top: 0.6rem;
-
-    .job-title {
-      font-size: 1rem;
-      line-height: 2.5rem;
-      color: #333;
-      font-weight: 300;
-    }
+  }
+  .job-title {
+    font-size: 1.4rem;
+    line-height: 1rem;
+    color: #333;
+    font-weight: 300;
   }
 }

@@ -7,10 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CJ Studio</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="css/pure-js-lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
     crossorigin="anonymous"></script>
+    <script src="js/pure-js-lightbox.min.js"></script>
 </head>
 
 
@@ -103,7 +105,7 @@
         </p>
       </div>
 
-      <div class="skill">
+      <!-- <div class="skill">
         <i class="fas fa-user skill__icon"></i>
 
         <h3>Digital Marketing</h3>
@@ -121,7 +123,7 @@
           It’s the truth and a real human point of view in helping brands and companies engage people by cutting
           through what doesn’t matter and focusing on what does.
         </p>
-      </div>
+      </div> -->
 
       <div class="skill">
         <i class="fas fa-desktop skill__icon"></i>
@@ -140,8 +142,7 @@
         <p class="skill__text">
           In today’s world, it’s critical to be wherever your consumers are. A custom mobile app or mobile responsive
           website puts you in the palm of their
-          hands. Mobile web usage has tripled year-to-year for three years in a row. Tablets have redefined the way
-          users access and experience content.
+          hands. Mobile web usage has tripled year-to-year for three years in a row.
         </p>
       </div>
 
@@ -152,37 +153,20 @@
 
       <h2>Explore Our Works</h2>
 
-      <div id="gallery">
-        <div id="gallery_one">
-          <img src="images/jeril_img/jeril_lexus.png" alt="Gallery Image one">
-        </div>
-        <div id="gallery_two">
-          <img src="images/jeril_img/jeril_star.png" alt="Gallery Image two">
-        </div>
-        <div id="gallery_three">
-          <img src="images/jeril_img/jeril_vol.png" alt="Gallery Image three">
-        </div>
-        <div id="gallery_four">
-          <img src="images/jeril_img/jeril_mono.png" alt="Gallery Image four">
-        </div>
-        <div id="gallery_five">
-          <img src="images/jeril_img/jeril_hotel.png" alt="Gallery Image five">
-        </div>
-        <div id="gallery_six">
-          <img src="images/camillo_img/travelbysense.jpg" alt="Gallery Image six">
-        </div>
-        <div id="gallery_seven">
-          <img src="images/camillo_img/architecture.png" alt="Gallery Image seven">
-        </div>
-        <div id="gallery_eight">
-          <img src="images/camillo_img/next.png" alt="Gallery Image eight">
-        </div>
-        <div id="gallery_nine">
-          <img src="images/camillo_img/sub37.png" alt="Gallery Image nine">
-        </div>
-        <div id="gallery_ten">
-          <img src="images/camillo_img/teamCanada.png" alt="Gallery Image ten">
-        </div>
+      <div id="projects">
+
+        <ul class="pure-js-lightbox-container gallery">
+          <li><a href="images/images_large/jeril_lexus.png"><img src="images/jeril_img/jeril_lexus.png"/></a></li>
+          <li><a href="images/images_large/jeril_star.png"><img src="images/jeril_img/jeril_star.png"/></a></li>
+          <li><a href="images/images_large/jeril_vol.png"><img src="images/jeril_img/jeril_vol.png"/></a></li>
+          <li><a href="images/images_large/jeril_mono.png"><img src="images/jeril_img/jeril_mono.png"/></a></li>
+          <li><a href="images/images_large/jeril_hotel.png"><img src="images/jeril_img/jeril_hotel.png"/></a></li>
+          <li><a href="images/images_large/travelbysense.jpg"><img src="images/camillo_img/travelbysense.jpg"/></a></li>
+          <li><a href="images/images_large/architecture.png"><img src="images/camillo_img/architecture.png"/></a></li>
+          <li><a href="images/images_large/next.jpg"><img src="images/camillo_img/next.png"/></a></li>
+          <li><a href="images/images_large/sub37.jpg"><img src="images/camillo_img/sub37.png"/></a></li>
+          <li><a href="images/images_large/teamCanada.jpg"><img src="images/camillo_img/teamCanada.png"/></a></li>
+        </ul>
 
       </div>
 
@@ -198,27 +182,27 @@
           <div class="card">
 
             <div class="card-image">
-              <img src="images/camillo_pic.jpg" alt="team profile one">
+              <img src="" alt="team profile one" id="member_pic_one">
             </div>
 
             <ul class="social-icons">
               <li>
-                        <a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
+                <a href="" target="_blank" id="linkedin_ref_one">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
               <li>
-                        <a href="https://github.com/cangelozzi">
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </li>
+                <a href="" id="github_ref_one" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
             </ul>
 
             <div class="details">
-              <h3>Camillo Angelozzi
-                <br>
-                <span class="job-title">Web Developer</span>
+              <h3 id="team_member_one">
               </h3>
+              <br>
+              <span class="job-title" id="job_title_one"></span>
             </div>
           </div>
         </div><!-- end team member one -->
@@ -228,27 +212,27 @@
           <div class="card">
 
             <div class="card-image">
-              <img src="images/jeril_pic.jpg" alt="team profile two">
+              <img src="" alt="team profile two" id="member_pic_two">
             </div>
 
             <ul class="social-icons">
               <li>
-                                    <a href="https://www.linkedin.com/in/jeril-g-kadavan-ba350612a/" target="_blank">
-                                      <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                  </li>
+                <a href="" target="_blank" id="linkedin_ref_two">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
               <li>
-                                    <a href="https://github.com/jerilgkadavan">
-                                      <i class="fab fa-github"></i>
-                                    </a>
-                                  </li>
+                <a href="" target="_blank" id="github_ref_two">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
             </ul>
 
             <div class="details">
-              <h3>Jeril Kadavan
-                <br>
-                <span class="job-title">Web Designer</span>
+              <h3 id="team_member_two">
               </h3>
+              <br>
+              <span class="job-title" id="job_title_two"></span>
             </div>
           </div>
         </div><!-- end team member two -->
@@ -278,6 +262,7 @@
     </section>
 
   </main>
+
   <script src="js/app.js"></script>
 </body>
 

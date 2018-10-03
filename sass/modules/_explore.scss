@@ -12,10 +12,11 @@
   }
 }
 
-#gallery {
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 2rem;
+  list-style: none;
 
   // mobile LANDSCAPE media queries
   @media screen and (min-device-width: 320px) and (orientation: landscape) {
@@ -24,7 +25,7 @@
 
   // desktop size media queries at 1200px
   @media screen and (min-width: 1200px) {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   }
 
   img {
@@ -40,6 +41,12 @@
     // mobile LANDSCAPE media queries
     @media screen and (min-device-width: 320px) and (orientation: landscape) {
       width: 60%;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+      overflow: hidden;
     }
   }
 }

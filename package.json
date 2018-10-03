@@ -12,5 +12,9 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp-imagemin": "^4.1.0"
   }
 }
