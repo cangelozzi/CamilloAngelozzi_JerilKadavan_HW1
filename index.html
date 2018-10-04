@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CJ Studio</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i" rel="stylesheet">
+  <link rel="stylesheet" href="css/pure-js-lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
@@ -85,63 +86,44 @@
       <div class="skill">
         <i class="fas fa-pencil-alt skill__icon"></i>
 
-        <h3>Digital Services</h3>
+        <h3 class="skill_title">
+          <!-- added dynamically from data skills array _-->
+        </h3>
         <p class="skill__text">
-          Working from a strategic-creative platform, we create content and develop digital experiences with
-          elasticity; expanding and contorting to suit the shape and dimension of business goals and consumer
-          expectations.
+          <!-- added dynamically from data skills array _-->
         </p>
       </div>
 
       <div class="skill">
         <i class="fas fa-cog skill__icon"></i>
 
-        <h3>Web Development</h3>
+        <h3 class="skill_title">
+          <!-- added dynamically from data skills array _-->
+        </h3>
         <p class="skill__text">
-          The age of the emotionally, not just visually, compelling website is upon us. And we’re totally ready for it.
-          From bold and insightful information architecture to rich, appealing design.
-        </p>
-      </div>
-
-      <div class="skill">
-        <i class="fas fa-user skill__icon"></i>
-
-        <h3>Digital Marketing</h3>
-        <p class="skill__text">
-          Drive traffic, build engagement, score meaningful conversions and cultivate long-term relationships with
-          smart, cost-effevctive, integrated campaigns that focus on relevant targets.
-        </p>
-      </div>
-
-      <div class="skill">
-        <i class="fas fa-chart-pie skill__icon"></i>
-
-        <h3>Digital Strategy</h3>
-        <p class="skill__text">
-          It’s the truth and a real human point of view in helping brands and companies engage people by cutting
-          through what doesn’t matter and focusing on what does.
+          <!-- added dynamically from data skills array _-->
         </p>
       </div>
 
       <div class="skill">
         <i class="fas fa-desktop skill__icon"></i>
 
-        <h3>UX / UI Design</h3>
+        <h3 class="skill_title">
+          <!-- added dynamically from data skills array _-->
+        </h3>
         <p class="skill__text">
-          How do you make a complex process simple? How do you make the intangibles into a working prototype? Our
-          immersive, fluid process of envisioning and prototyping drives our ability to innovate and iterate quickly.
+          <!-- added dynamically from data skills array _-->
         </p>
       </div>
 
       <div class="skill">
         <i class="fas fa-mobile-alt skill__icon"></i>
 
-        <h3>Mobile Development</h3>
+        <h3 class="skill_title">
+          <!-- added dynamically from data skills array _-->
+        </h3>
         <p class="skill__text">
-          In today’s world, it’s critical to be wherever your consumers are. A custom mobile app or mobile responsive
-          website puts you in the palm of their
-          hands. Mobile web usage has tripled year-to-year for three years in a row. Tablets have redefined the way
-          users access and experience content.
+          <!-- added dynamically from data skills array _-->
         </p>
       </div>
 
@@ -152,37 +134,20 @@
 
       <h2>Explore Our Works</h2>
 
-      <div id="gallery">
-        <div id="gallery_one">
-          <img src="images/jeril_img/jeril_lexus.png" alt="Gallery Image one">
-        </div>
-        <div id="gallery_two">
-          <img src="images/jeril_img/jeril_star.png" alt="Gallery Image two">
-        </div>
-        <div id="gallery_three">
-          <img src="images/jeril_img/jeril_vol.png" alt="Gallery Image three">
-        </div>
-        <div id="gallery_four">
-          <img src="images/jeril_img/jeril_mono.png" alt="Gallery Image four">
-        </div>
-        <div id="gallery_five">
-          <img src="images/jeril_img/jeril_hotel.png" alt="Gallery Image five">
-        </div>
-        <div id="gallery_six">
-          <img src="images/camillo_img/travelbysense.jpg" alt="Gallery Image six">
-        </div>
-        <div id="gallery_seven">
-          <img src="images/camillo_img/architecture.png" alt="Gallery Image seven">
-        </div>
-        <div id="gallery_eight">
-          <img src="images/camillo_img/next.png" alt="Gallery Image eight">
-        </div>
-        <div id="gallery_nine">
-          <img src="images/camillo_img/sub37.png" alt="Gallery Image nine">
-        </div>
-        <div id="gallery_ten">
-          <img src="images/camillo_img/teamCanada.png" alt="Gallery Image ten">
-        </div>
+      <div id="projects">
+
+        <ul class="pure-js-lightbox-container gallery">
+          <li><a href="images/images_large/jeril_lexus.jpg"><img src="images/jeril_img/jeril_lexus.png" alt="explore gallery image"/></a>Lexus Canada Website</li>
+          <li><a href="images/images_large/jeril_star.jpg"><img src="images/jeril_img/jeril_star.png" alt="explore gallery image"/></a>Starship Troopers Website</li>
+          <li><a href="images/images_large/jeril_vol.jpg"><img src="images/jeril_img/jeril_vol.png" alt="explore gallery image"/></a>Pure Volume Website</li>
+          <li><a href="images/images_large/jeril_mono.jpg"><img src="images/jeril_img/jeril_mono.png" alt="explore gallery image"/></a>Monogram Mobile App</li>
+          <li><a href="images/images_large/jeril_hotel.jpg"><img src="images/jeril_img/jeril_hotel.png" alt="explore gallery image"/></a>Resort Rebranding</li>
+          <li><a href="images/images_large/travelbysense.jpg"><img src="images/camillo_img/travelbysense.jpg" alt="explore gallery image"/></a>Travel By Sense Web App</li>
+          <li><a href="images/images_large/architecture.jpg"><img src="images/camillo_img/architecture.png" alt="explore gallery image"/></a>Architecture Website</li>
+          <li><a href="images/images_large/next.jpg"><img src="images/camillo_img/next.png" alt="explore gallery image"/></a>Next Conference Website</li>
+          <li><a href="images/images_large/sub37.jpg"><img src="images/camillo_img/sub37.png" alt="explore gallery image"/></a>Moog Sub37 Web App</li>
+          <li><a href="images/images_large/teamCanada.jpg"><img src="images/camillo_img/teamCanada.png" alt="explore gallery image" /></a>Team Canada 1972 Website</li>
+        </ul>
 
       </div>
 
@@ -198,27 +163,30 @@
           <div class="card">
 
             <div class="card-image">
-              <img src="images/camillo_pic.jpg" alt="team profile one">
+              <!-- added dynamically from data team members array _-->
+              <img src="" alt="team profile one" id="dev_pic">
             </div>
 
             <ul class="social-icons">
+              <!-- added dynamically from data team members array _-->
               <li>
-                        <a href="https://www.linkedin.com/in/camillo-angelozzi-a0b5a229/" target="_blank">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
+                <a href="" target="_blank" id="dev_linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
               <li>
-                        <a href="https://github.com/cangelozzi">
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </li>
+                <a href="" id="dev_github" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
             </ul>
 
             <div class="details">
-              <h3>Camillo Angelozzi
-                <br>
-                <span class="job-title">Web Developer</span>
+              <h3 id="team_dev">
+                <!-- added dynamically from data team members array _-->
               </h3>
+              <br>
+              <span class="job-title" id="job_title_dev"></span>
             </div>
           </div>
         </div><!-- end team member one -->
@@ -228,27 +196,30 @@
           <div class="card">
 
             <div class="card-image">
-              <img src="images/jeril_pic.jpg" alt="team profile two">
+              <!-- added dynamically from data team members array _-->
+              <img src="" alt="team profile two" id="des_pic">
             </div>
 
             <ul class="social-icons">
+              <!-- added dynamically from data team members array _-->
               <li>
-                                    <a href="https://www.linkedin.com/in/jeril-g-kadavan-ba350612a/" target="_blank">
-                                      <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                  </li>
+                <a href="" target="_blank" id="des_linkedin">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
               <li>
-                                    <a href="https://github.com/jerilgkadavan">
-                                      <i class="fab fa-github"></i>
-                                    </a>
-                                  </li>
+                <a href="" target="_blank" id="des_github">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
             </ul>
 
             <div class="details">
-              <h3>Jeril Kadavan
-                <br>
-                <span class="job-title">Web Designer</span>
+              <!-- added dynamically from data team members array _-->
+              <h3 id="team_des">
               </h3>
+              <br>
+              <span class="job-title" id="job_title_des"></span>
             </div>
           </div>
         </div><!-- end team member two -->
@@ -278,6 +249,9 @@
     </section>
 
   </main>
+
+  <script src="js/pure-js-lightbox.min.js"></script>
+  <script src="data/classData.js"></script>
   <script src="js/app.js"></script>
 </body>
 

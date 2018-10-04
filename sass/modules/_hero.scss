@@ -36,29 +36,30 @@
       font-size: 2.4rem;
     }
 
-    // desktop size media queries at 700px
+    // desktop size media queries at 1200px
     @media screen and (min-width: 1200px) {
-      font-size: 6rem;
+      font-size: 4.5rem;
     }
   }
 
   &__logo {
     width: 46%;
     display: block;
-    position: absolute;
-    top: 10rem;
+    position: relative;
+    top: 2rem;
     left: 0;
     right: 0;
     margin: auto;
 
     @media screen and (min-device-width: 320px) and (orientation: landscape) {
       width: 25%;
-      top: 8rem;
+      top: 2rem;
     }
 
     // desktop size media queries at 1200px
     @media screen and (min-width: 1200px) {
-      top: 14rem;;
+      width: 36%;
+      top: 2rem;;
     }
   }
 
@@ -83,13 +84,19 @@
 
     // desktop size media queries at 1200px
     @media screen and (min-width: 1200px) {
-      top: 60%;
+      top: 64%;
       border-bottom: 6px solid $color_black;
+      
     }
 
     span {
       margin-right: 0.6rem;
     }
+    span:nth-child(1) {animation: hero 6s;}
+    span:nth-child(2) {animation: hero 6s;}
+    span:nth-child(3) {animation: hero 9s;}
+    span:nth-child(4) {animation: hero 9s;}
+    
     span:last-child {
       margin-right: 0;
     }
@@ -114,7 +121,7 @@
 
     // desktop size media queries at 1200px
     @media screen and (min-width: 1200px) {
-      top: 80%;
+      top: 77%;
     }
 
     p {
@@ -127,7 +134,7 @@
 
       // desktop size media queries at 700px
       @media screen and (min-width: 1200px) {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
       }
     }
   }

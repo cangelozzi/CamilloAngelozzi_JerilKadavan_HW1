@@ -51,7 +51,12 @@
     @media screen and (min-width: 700px) {
       opacity: 1;
       background-color: rgba(0, 0, 0, 0.8);
-      height: 5vh;
+      height:5.8vh;
+    }
+
+    // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      height:7.6vh;
     }
 
   }
@@ -73,7 +78,7 @@
 
     // Tablet LANDSCAPE media queries
     @media screen and (min-device-width: 700px) and (orientation: landscape) {
-      top: 2rem;
+      top: 3rem;
     }
   }
   &__item {
