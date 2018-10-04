@@ -17,6 +17,14 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 2rem;
   list-style: none;
+  position: relative;
+
+  li {
+    font-size: 1.6rem;
+    margin-block-end: 6rem;
+    text-align: center;
+    color: $dark_text_color;
+  }
 
   // mobile LANDSCAPE media queries
   @media screen and (min-device-width: 320px) and (orientation: landscape) {
@@ -30,13 +38,28 @@
 
   img {
     width: 90%;
-    height: 20rem;
+    height: 19rem;
     display: block;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.6);
     box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s;
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    -o-filter: brightness(70%);
+    -ms-filter: brightness(70%);
+    filter: brightness(70%);
+
+    &:hover {
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    -o-filter: brightness(100%);
+    -ms-filter: brightness(100%);
+    filter: brightness(100%);
+    transform: scale(1.06);
+    }
 
     // mobile LANDSCAPE media queries
     @media screen and (min-device-width: 320px) and (orientation: landscape) {
@@ -46,7 +69,6 @@
     // desktop size media queries at 1200px
     @media screen and (min-width: 1200px) {
       width: 100%;
-      overflow: hidden;
     }
   }
 }

@@ -32,7 +32,7 @@ gulp.task("imageMin", () =>
   gulp
     .src("images/*")
     .pipe(imagemin())
-    .pipe(gulp.dest("images/img_optimized"))
+    .pipe(gulp.dest("images/optimized"))
 );
 
 gulp.task("default", ["message", "imageMin", "sass"]);

@@ -26,6 +26,11 @@
       color: #000;
       text-decoration: none;
 
+      &:hover {
+        font-weight: bolder;
+        color: $grad_1;
+      }
+
       // desktop size media queries at 1200px
       @media screen and (min-width: 1200px) {
         font-size: 2rem;

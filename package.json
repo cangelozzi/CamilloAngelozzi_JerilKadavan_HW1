@@ -4,7 +4,7 @@
   "description": "HW1",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass --output-style compressed sass/main.scss css/main.css -w"
+    "dev": "gulp watch & gulp serve"
   },
   "author": "Camillo Angelozzi and Jeril Kadavan",
   "license": "ISC",
